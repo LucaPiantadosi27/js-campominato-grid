@@ -6,7 +6,6 @@
 
 // ---------------------------- //
 
-
 // creo un bottone che genera la griglia di gioco quadrata
 const  gridElement = document.getElementById('grid');
 const  playButton = document.getElementById('play');
@@ -35,7 +34,6 @@ cella.addEventListener('click', function() {
 
     //   stampo in console il numero della cella cliccata
     console.log(cellNumber);
-
 })
 return cella;
 }

@@ -19,6 +19,7 @@ button {
     width: 100px;
     margin-right: 40px;
     margin-top: 40px;
+    border-radius: 8px;
 }
 h1 {
     margin-left: 40px;
@@ -30,7 +31,13 @@ footer {
     height: 70px;
     background-color: white;
     width: 100%;
+    text-decoration: none;
     
+}
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
 }
 footer p {
     padding: 25px;
@@ -57,3 +64,4 @@ footer p {
 .cellacolorata {
     background-color: blue;
 }
+
