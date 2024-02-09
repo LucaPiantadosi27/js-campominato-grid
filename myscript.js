@@ -7,3 +7,35 @@
 // ---------------------------- //
 
 
+// creo un bottone che genera la griglia di gioco quadrata
+const  gridElement = document.getElementById('grid');
+const  playButton = document.getElementById('play');
+generateGrid(gridElement);
+
+
+function generateGrid(container) {
+    container.innerHTML = '';
+for (let i = 0; i < 100; i ++) {
+    const cellElement = generateCell(i);
+    container.append(cellElement);
+}
+}
+
+function generateCell(cellNumber)  {
+const cella = document.createElement('div');
+cella.classList.add('cella');
+
+// assegno alle celle un numero da 1 a 100 progressivo da disporre 10x10
+cella.innerText = cellNumber; 
+
+
+//  ogni cella  quando clicco, diventa colore azzurro
+cella.addEventListener('click', function() {
+    cella.classList.toggle('cellacolorata');
+
+    //   stampo in console il numero della cella cliccata
+    console.log(cellNumber);
+
+})
+return cella;
+}

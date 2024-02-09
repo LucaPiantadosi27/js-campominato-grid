@@ -6,10 +6,9 @@
 body {
     background-color: aquamarine;
     overflow: hidden;
-
 }
-#header{
-
+#header {
+    display: flex;
     height: 100px;
     justify-content: space-between;
     background-color: white;
@@ -38,16 +37,22 @@ footer p {
     font-size: 20px;
 }
 #grid {
-    border: 1px solid black;
+
     width: 700px;
     height: 700px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+
 }
-.celle {
+
+.cella {
     width: calc(100% / 10);
     height: calc(100% / 10);
-    border: 1px solid black;
-   
+    border: 2px solid black;
+
+}
+
+.cellacolorata {
+    background-color: blue;
 }
