@@ -9,7 +9,12 @@
 // creo un bottone che genera la griglia di gioco quadrata
 const  gridElement = document.getElementById('grid');
 const  playButton = document.getElementById('play');
-generateGrid(gridElement);
+
+// Azione button play
+playButton.addEventListener('click', function () {
+    generateGrid(gridElement);
+} )
+
 
 
 function generateGrid(container) {
