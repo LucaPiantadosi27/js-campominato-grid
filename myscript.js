@@ -40,6 +40,13 @@ cella.addEventListener('click', function() {
 //   stampo in console il numero della cella cliccata
     console.log(cellNumber);
     
+    if (bombe.includes(cellNumber)) {
+        cella.classList.add('bombacalpestata');
+        setTimeout(function() { alert("GAME OVER"); }, 100);
+
+    } else {
+        cella.classList.add('cellacolorata');                        
+    }
 
 })
 return cella;
