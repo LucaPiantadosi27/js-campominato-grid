@@ -15,7 +15,7 @@ generateGrid(gridElement);
 function generateGrid(container) {
     container.innerHTML = '';
 for (let i = 0; i < 100; i ++) {
-    const cellElement = generateCell(i);
+    const cellElement = generateCell(i);  
     container.append(cellElement);
 }
 }
@@ -37,3 +37,7 @@ cella.addEventListener('click', function() {
 })
 return cella;
 }
+
+// Bombe//
+
+
