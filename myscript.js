@@ -49,11 +49,12 @@ return cella;
 //Bombe 
 let bombe = [];
 
-for(i = 0; i < 15; i++)
+while (bombe.length < 16)
 {
-    bombe[i] = Math.floor(Math.random() * 100 + 1 );
-    if (bombe.includes(bombe[i]))
-    bombe.push(i);
+    let number = Math.floor(Math.random() * 100 + 1 );
+    if (!bombe.includes(number)) {
+        bombe.push(number);
+}
 
 }
 console.table(bombe);
