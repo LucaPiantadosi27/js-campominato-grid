@@ -56,6 +56,7 @@ return cella;
 //Bombe 
 let bombe = [];
 
+
 while (bombe.length < 16)
 {
     let number = Math.floor(Math.random() * 100 + 1 );
@@ -65,5 +66,3 @@ while (bombe.length < 16)
 
 }
 console.table(bombe);
-
-
