@@ -37,12 +37,25 @@ cella.innerText = cellNumber;
 cella.addEventListener('click', function() {
     cella.classList.toggle('cellacolorata');
 
-    //   stampo in console il numero della cella cliccata
+//   stampo in console il numero della cella cliccata
     console.log(cellNumber);
+    
+
 })
 return cella;
 }
 
-// Bombe//
+
+//Bombe 
+let bombe = [];
+
+for(i = 0; i < 15; i++)
+{
+    bombe[i] = Math.floor(Math.random() * 100 + 1 );
+    if (bombe.includes(bombe[i]))
+    bombe.push(i);
+
+}
+console.table(bombe);
 
 
